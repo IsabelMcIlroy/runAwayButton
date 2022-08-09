@@ -11,3 +11,7 @@ body{
     border: none;
     border-radius: 200px;
 }
+
+#openSound{
+    display: none;
+}

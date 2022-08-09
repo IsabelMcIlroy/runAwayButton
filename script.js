@@ -1,5 +1,10 @@
 const runAwayButton = document.getElementById("runAwayButton");
 const OFFSET = 100;
+var openSound = document.getElementById("openSound");
+var runningSound = document.getElementById("runningSound");
+window.onload = function () {
+  openSound.play();
+};
 
 runAwayButton.addEventListener("click", () => {
   alert("Nice Try!");
@@ -38,15 +43,19 @@ setButtonPostion = (left, top) => {
   const buttonBox = runAwayButton.getBoundingClientRect();
   if (distanceFromCenter(left, windowBox.left, buttonBox.width) < 0) {
     left = windowBox.right - buttonBox.width - OFFSET;
+    runningSound.play();
   }
   if (distanceFromCenter(left, windowBox.right, buttonBox.width) > 0) {
     left = windowBox.left + OFFSET;
+    runningSound.play();
   }
   if (distanceFromCenter(top, windowBox.top, buttonBox.height) < 0) {
     top = windowBox.bottom - buttonBox.height - OFFSET;
+    runningSound.play();
   }
   if (distanceFromCenter(top, windowBox.bottom, buttonBox.height) > 0) {
     top = windowBox.top + OFFSET;
+    runningSound.play();
   }
   runAwayButton.style.left = `${left}px`;
   runAwayButton.style.top = `${top}px`;
