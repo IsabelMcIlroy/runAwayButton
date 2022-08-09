@@ -1,8 +1,8 @@
 const runAwayButton = document.getElementById("runAwayButton");
 const OFFSET = 100;
-const openSound = document.getElementById("openSound");
-const runningSound = document.getElementById("runningSound");
-const wooshSound = document.getElementById("wooshSound");
+const openSound = new Audio("sounds/mixkit-small-door-bell-589.wav");
+const runningSound = new Audio("sounds/mixkit-vinyl-stop-fast-scratch-704.wav");
+const wooshSound = new Audio("sounds/mixkit-slow-vinyl-record-scratch-706.wav");
 window.onload = function () {
   openSound.play();
 };
