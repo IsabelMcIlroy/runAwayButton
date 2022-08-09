@@ -1,7 +1,8 @@
 const runAwayButton = document.getElementById("runAwayButton");
 const OFFSET = 100;
-var openSound = document.getElementById("openSound");
-var runningSound = document.getElementById("runningSound");
+const openSound = document.getElementById("openSound");
+const runningSound = document.getElementById("runningSound");
+const wooshSound = document.getElementById("wooshSound");
 window.onload = function () {
   openSound.play();
 };
@@ -31,6 +32,7 @@ runAwayButton.addEventListener("mousemove", (e) => {
     Math.abs(horizontalDistanceFrom) <= horizontalOffeset &&
     Math.abs(verticalDistanceFrom) <= verticalOffeset
   ) {
+    wooshSound.play();
     setButtonPostion(
       buttonBox.x + (horizontalOffeset / horizontalDistanceFrom) * 10,
       buttonBox.y + (verticalOffeset / verticalDistanceFrom) * 10
