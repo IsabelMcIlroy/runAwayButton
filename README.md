@@ -1,7 +1,9 @@
-![Screenshot](images/Screenshot.jpg) 
+# You can't catch me I'm the gingerbread man!
 
 ## Description
-Followed a <a href="https://www.youtube.com/watch?v=UiA4X60Qe1E&t=371s" target="_blank" > Web Dev Simplified tutorial </a> to practice my javaScript, . I plan to add some more custom styling to this, and maybe some more effects. 
+Just playing around with a <a href="https://www.youtube.com/watch?v=UiA4X60Qe1E&t=371s" target="_blank" > Web Dev Simplified javaScript tutorial. </a> I played around with the styling to make a run away gingebread man and added in some sounds. 
 
 ## Link to Demo Site
 https://isabelmcilroy.github.io/runAwayButton/
+
+![Screenshot](images/GingerBreadMan.svg) 
